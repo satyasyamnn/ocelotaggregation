@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29920.165
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RequestAggregationExample", "RequestAggregationExample.csproj", "{97456827-468E-4566-99B6-3DAF96D7865B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gateway", "..\Gateway\Gateway.csproj", "{CC32583F-B983-4DCC-86B8-6E2CD465C4CF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{97456827-468E-4566-99B6-3DAF96D7865B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{97456827-468E-4566-99B6-3DAF96D7865B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{97456827-468E-4566-99B6-3DAF96D7865B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{97456827-468E-4566-99B6-3DAF96D7865B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CC32583F-B983-4DCC-86B8-6E2CD465C4CF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CC32583F-B983-4DCC-86B8-6E2CD465C4CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CC32583F-B983-4DCC-86B8-6E2CD465C4CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CC32583F-B983-4DCC-86B8-6E2CD465C4CF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {96623859-81A4-402A-81B6-8D17B5150602}
+	EndGlobalSection
+EndGlobal
