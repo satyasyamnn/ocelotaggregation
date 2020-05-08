@@ -1,0 +1,67 @@
+{
+  "ReRoutes": [
+    {
+      "DownstreamPathTemplate": "/api/products/",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 52483
+        }
+      ],
+      "UpstreamPathTemplate": "/api/products/",
+      "UpstreamHttpMethod": [ "Get" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/user/getbyid/{id}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 52483
+        }
+      ],
+      "UpstreamPathTemplate": "/api/user/getbyid/{id}",
+      "UpstreamHttpMethod": [ "Get" ],
+      "Key": "user-profile"
+    },
+    {
+      "DownstreamPathTemplate": "/api/transactions/",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 52483
+        }
+      ],
+      "UpstreamPathTemplate": "/api/transactions/",
+      "UpstreamHttpMethod": [ "Get" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/transactions/getbyuserid/{id}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 52483
+        }
+      ],
+      "UpstreamPathTemplate": "/api/transactions/getbyuserid/{id}",
+      "UpstreamHttpMethod": [ "Get" ],
+      "Key": "user-transactions"
+    }
+  ],
+  "Aggregates": [
+    {
+      "ReRouteKeys": [
+        "user-transactions",
+        "user-profile"
+      ],
+      "UpstreamPathTemplate": "/api/user-transactions/{id}",
+      "Aggregator": "DataAggregator"
+    }
+  ],
+  "GlobalConfiguration": {
+    "BaseUrl": "http://localhost:52692"
+  }
+}
